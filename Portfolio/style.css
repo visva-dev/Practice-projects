@@ -12,7 +12,12 @@ body {
 
 h1,
 i {
-  color: #1DBFAF;
+  color: #1dbfaf;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 .container {
@@ -66,10 +71,29 @@ main {
   width: 30%;
 }
 
+.title2 {
+  border-bottom: 2px solid #1dbfaf;
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills h2 {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #1dbfaf;
+  border-radius: 3px;
+  padding: 1px;
+  margin: 5px;
+}
+
 .content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .title {
@@ -84,8 +108,8 @@ main {
 }
 
 .mic-logo {
-    width: 25px;
-    border-radius: 50%;
+  width: 25px;
+  border-radius: 50%;
 }
 
 /* flex basis  */
