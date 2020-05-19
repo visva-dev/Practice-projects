@@ -5,29 +5,31 @@
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    /* #1DBFAF */
-    /* #1DBFAF */
+  font-family: 'Roboto Mono', monospace;
+  /* #1DBFAF */
+  /* #1DBFAF */
 }
 
-h1, i {
-    color: #1DBFAF;
+h1,
+i {
+  color: #1DBFAF;
 }
 
 .container {
   margin: auto;
   max-width: 1100px;
   overflow: auto;
-  padding: 0 20px;
+  padding: 0 0;
 }
 
 .header-div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .profile {
   display: flex;
+  margin-top: 15px;
 }
 
 .name-dsc {
@@ -36,24 +38,54 @@ h1, i {
 }
 
 .about {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .profile-img {
   width: 13rem;
   border-radius: 50%;
-  background-color: green;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 15px;
 }
 
 main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-left-div {
+  width: 65%;
+}
+
+.main-right-div {
+  width: 30%;
+}
+
+.content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+
+.title {
+  border-bottom: 2px solid #1dbfaf;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mic-logo {
+    width: 25px;
+    border-radius: 50%;
 }
 
 /* flex basis  */
