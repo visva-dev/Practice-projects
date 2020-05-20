@@ -143,5 +143,11 @@ main {
   border-bottom: 2px solid #1dbfaf;
 }
 
+.authors {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-around;
+}
+
 
 /* flex basis  */
