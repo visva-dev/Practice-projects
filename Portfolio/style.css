@@ -78,7 +78,7 @@ main {
 
 .skills {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .skills h2 {
@@ -88,6 +88,7 @@ main {
   border-radius: 3px;
   padding: 1px;
   margin: 5px;
+  font-size: 15px;
 }
 
 .content {
@@ -110,6 +111,15 @@ main {
 .mic-logo {
   width: 25px;
   border-radius: 50%;
+}
+
+.text {
+  display: flex;
+  margin: 15px 0;
+}
+
+.text > span {
+  margin-right: 10px;
 }
 
 /* flex basis  */
