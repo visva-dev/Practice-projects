@@ -7,7 +7,7 @@
 body {
   font-family: 'Roboto Mono', monospace;
   /* #1DBFAF */
-  /* #1DBFAF */
+  /* #085551 */
 }
 
 h1,
@@ -73,7 +73,8 @@ main {
 
 .title2 {
   border-bottom: 2px solid #1dbfaf;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 0.8rem;
 }
 
 .skills {
@@ -86,9 +87,10 @@ main {
   justify-content: center;
   border: 2px solid #1dbfaf;
   border-radius: 3px;
-  padding: 1px;
+  padding: 5px;
   margin: 5px;
-  font-size: 15px;
+  margin-top: 6px;
+  font-size: 20px;
 }
 
 .content {
@@ -113,13 +115,33 @@ main {
   border-radius: 50%;
 }
 
+.mic-logo2 {
+  width: 700px;
+}
+
 .text {
   display: flex;
   margin: 15px 0;
 }
 
+.text2 {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-around;
+}
+
+.text2 > span {
+  margin-right: 10px;
+  color: #1dbfaf;
+}
 .text > span {
   margin-right: 10px;
+  color: #1dbfaf;
 }
+
+.live-demo {
+  border-bottom: 2px solid #1dbfaf;
+}
+
 
 /* flex basis  */
