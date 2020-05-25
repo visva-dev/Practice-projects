@@ -143,6 +143,7 @@ main {
 
 .live-demo {
   border-bottom: 2px solid #1dbfaf;
+  margin-bottom: 0;
 }
 
 .authors {
