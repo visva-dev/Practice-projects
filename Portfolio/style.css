@@ -22,7 +22,7 @@ a {
 
 .container {
   margin: auto;
-  max-width: 1100px;
+  max-width: 1200px;
   overflow: auto;
   padding: 0 0;
 }
@@ -64,11 +64,12 @@ main {
 }
 
 .main-left-div {
-  width: 65%;
+  width: 66%;
 }
 
 .main-right-div {
-  width: 30%;
+  width: 25%;
+  /* padding-left: 10px; */
 }
 
 .title2 {
@@ -122,12 +123,13 @@ main {
 .text {
   display: flex;
   margin: 15px 0;
+
 }
 
 .text2 {
   display: flex;
   margin: 15px 0;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .text2 > span {
@@ -146,8 +148,20 @@ main {
 .authors {
   display: flex;
   margin: 15px 0;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
+.built-with {
+  font-size: 16px;
+  border: 2px solid #1dbfaf;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 0;
+}
 
-/* flex basis  */
+.line {
+  border-bottom: 2px solid #1dbfaf;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
