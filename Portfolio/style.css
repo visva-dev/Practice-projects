@@ -6,8 +6,6 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
-  /* #1DBFAF */
-  /* #085551 */
 }
 
 h1,
@@ -22,7 +20,7 @@ a {
 
 .container {
   margin: auto;
-  max-width: 1200px;
+  max-width: 70%;
   overflow: auto;
   padding: 0 0;
 }
@@ -48,7 +46,7 @@ a {
 
 .profile-img {
   width: 13rem;
-  border-radius: 50%;
+  border-radius: 7em;
 }
 
 .contacts {
@@ -87,11 +85,11 @@ main {
   display: flex;
   justify-content: center;
   border: 2px solid #1dbfaf;
-  border-radius: 3px;
+  border-radius: 0.1em;
   padding: 5px;
   margin: 5px;
   margin-top: 6px;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .content {
@@ -113,7 +111,7 @@ main {
 
 .mic-logo {
   width: 25px;
-  border-radius: 50%;
+  border-radius: 7em;
 }
 
 .mic-logo2 {
@@ -153,9 +151,9 @@ main {
 }
 
 .built-with {
-  font-size: 16px;
+  font-size: 1rem;
   border: 2px solid #1dbfaf;
-  border-radius: 3px;
+  border-radius: 0.1em;
   padding: 5px;
   margin: 5px;
   margin-top: 0;
