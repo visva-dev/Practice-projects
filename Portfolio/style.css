@@ -21,7 +21,7 @@ a {
 .container {
   margin: auto;
   max-width: 70%;
-  overflow: auto;
+  overflow-x: hidden;
   padding: 0 0;
 }
 
@@ -54,6 +54,10 @@ a {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 15px;
+}
+
+.main-right-mobile {
+  display: none;
 }
 
 main {
@@ -163,4 +167,35 @@ main {
   border-bottom: 2px solid #1dbfaf;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 888px) {
+  .header-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-left: 10px;
+  }
+
+  .main-right-div {
+    display: none;
+  }
+
+  .main-right-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 7px;
+  }
+
+  .main-left-div {
+    width: 100%;
+  }
 }
