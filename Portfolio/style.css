@@ -102,6 +102,11 @@ main {
   flex-direction: column;
 }
 
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .title {
   border-bottom: 2px solid #1dbfaf;
   margin-top: 10px;
@@ -197,5 +202,21 @@ main {
 
   .main-left-div {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  .container {
+    max-width: 98%;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
   }
 }
