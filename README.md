@@ -5,6 +5,7 @@ Projects created for practice purposes. The repository consists a number of proj
 
 - Html,
 - CSS
+- Ruby
 
 ## Authors
 
