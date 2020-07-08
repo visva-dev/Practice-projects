@@ -92,7 +92,7 @@ end
 test_5
 
 def test_b
-    # skip
+
     band = ["Guitar", "Drums", "Bass"].unshift("Vocals")
     # Call a method on the band variable to add the element "Vocals"
     # to the beginning of the array
@@ -102,7 +102,7 @@ end
 test_b
 
 def test_c
-    # skip
+
     garden = ["Tulips", "Tomatoes", "Basil", "Peppers"]
     # Call a method to remove and return the first element from the garden array
     first_element = garden.shift
@@ -121,3 +121,72 @@ def test_6
     puts some_teams
 end
 test_6
+
+def test_7
+    fourteeners = ["Pikes Peak", nil, "Mount Elbert", nil, "Mount Evans"].compact
+    # Call a method on the fourteeners variable to remove the nils
+    puts fourteeners
+end
+test_7
+
+def test_8
+    pokemon = [["Squirtle", "Charmander", "Bulbasaur"], ["Pikachu"], "Staryu"]
+    # Call a method on the pokemon variable to remove the nesting
+    puts pokemon = pokemon.flatten!
+end
+test_8
+
+def test_9
+    scores = [23, 56, 34, 29, 48].rotate(1)
+    # Call a method on the scores variables that will
+    # move the elements two spots to the left
+    puts new_scores = scores.rotate(1)
+
+    # Now call a method on the scores variables that will
+    # move the elements one spot to the right
+    puts new_scores = scores.rotate(3)
+end
+test_9
+
+def test_10
+    vowels = ["a", "e", "y", "i", "o", "u", "y"].grep(/[^y]/)
+    # Call a method on the vowels variable to remove "y"
+    puts vowels
+end
+test_10
+
+def test_11
+    furniture = ["couch", "bed", "table"]
+    # Call a method on the furniture variable to add the element
+    # "dresser" in between the elements "couch" and "bed"
+    puts new_furniture = furniture.insert(1, "dresser")
+end
+test_11
+
+def test_12
+    children = ["Sarah", "Owen", "Peter"].join(", ")
+    # Call a method on the children variable to combine them into
+    # one string like this: "Sarah, Owen, Peter"
+    puts children
+end
+test_12
+
+def test_13
+    ascending = [1,2,3,4,5].reverse
+    # Call a method on the ascending variable to create an array
+    # with the elements in the opposite order
+    puts ascending
+end
+test_13
+
+def test_14
+    dice = [1,2,3,4,5,6].sample
+    # Call a method on the dice variable to get a random element out
+    # of the array
+    print "Random Number --> "
+    puts dice
+    # Note, this assertion assumes the Ruby Version is 2.4 or higher.
+    # This test will fail with expecting roll to be a FixNum if the
+    # Ruby version is 2.3 or earlier
+end
+test_14
