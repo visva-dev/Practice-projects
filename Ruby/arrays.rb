@@ -190,3 +190,224 @@ def test_14
     # Ruby version is 2.3 or earlier
 end
 test_14
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f']
+print letters
+
+puts letters[1]
+
+puts letters
+
+puts letters.length
+
+some_array = ['abc', true, false, 30]
+
+print some_array
+print "\n"
+names = ['Maurice', 'Jane', 'Bob']
+print names
+print "\n"
+names <<"Brian"
+print names
+print "\n"
+names[1] = 'Lol'
+print names
+print "\n"
+
+def print_array(arr)
+    i = 0
+    while i < arr.length
+    puts arr[i]
+    i += 1
+    end
+end
+foods = ['pizza', 'ham', 'apple', 'banana', 'sushi']
+print_array(foods)
+
+def doubler(numbers)
+    doubled_nums = []
+    i = 0
+    while i < numbers.length
+        old_elements = numbers[i] # or we can use << numbers[i] * 2
+        new_elements = old_elements * 2 # or we can use << numbers[i] * 2
+        doubled_nums << new_elements # or we can use << numbers[i] * 2
+        i += 1
+    end
+    return doubled_nums
+end
+print doubler([1, 2, 3, 4])
+print "\n"
+def yell(words)
+    yelled = []
+    i = 0
+    while i < words.length
+        word = words[i]
+        yelled_word = word + '!'
+        yelled << yelled_word
+        i += 1
+    end
+    return yelled
+end
+print yell(['hello', 'world'])
+print "\n"
+print yell(['code', 'is', 'cool'])
+print "\n"
+def element_times_index(nums)
+    new_nums = []
+    i = 0
+    while i < nums.length
+        new_nums << nums[i] * i
+        i += 1
+    end
+    return new_nums
+end
+print element_times_index([1, 2, 3, 4])
+print "\n"
+print element_times_index([8, 9, 55])
+
+def even_nums(max)
+    array = []
+    i = 0
+    while i < max
+        if i % 2 == 0
+            array << i
+        end
+        i += 1
+    end
+    puts "Even numbers"
+    return array
+end
+print "\n"
+print even_nums(8)
+puts ' '
+print even_nums(17)
+puts ' '
+
+def range(min, max)
+    nums = []
+    i = min
+    while i <= max
+        nums << i
+        i += 1
+    end
+    return nums
+end
+print range(2, 9)
+puts
+
+
+def odd_range(min, max)
+    odds = []
+    i = min
+    while i <= max
+        if i % 2 == 1
+            odds << i
+        end
+        i += 1
+    end
+    return odds
+end
+print odd_range(11, 19)
+puts
+print odd_range(3, 9)
+puts
+
+def reverse_range(min_num, max_num)
+    nums = []
+    i = max_num - 1
+    while i >= min_num
+        nums << i
+        i -= 1
+    end
+    return nums
+end
+print reverse_range(10, 19)
+puts
+print reverse_range(1, 10)
+puts
+
+def first_half(array)
+    new_array = []
+    i = 0
+    while i < array.length / 2
+        new_array << array[i]
+        i += 1
+    end
+    return new_array
+end
+print first_half(['Brian', 'Smith', 'Jones', 'Watson'])
+puts
+
+def factors_of(num)
+    factors = []
+    i = 1
+    while i <= num
+        if num % i == 0
+            factors << i
+        end
+        i += 1
+    end
+    return factors
+end
+print factors_of(3)
+puts
+print factors_of(10)
+puts
+
+def select_odds(numbers)
+    odds = []
+    i = 0
+    while i < numbers.length
+        num = numbers[i]
+        if num % 2 == 1
+            odds << num
+        end
+        i += 1
+    end
+    return odds
+end
+print select_odds([13, 20, 3, 5, 7, 8])
+puts
+
+def select_long_words(words)
+    long_words = []
+    i = 0
+    while i < words.length
+        word = words[i]
+        if word.length > 4
+            long_words << word
+        end
+        i += 1
+    end
+    return long_words
+end
+
+print select_long_words(['what', 'is', 'does', 'eating', 'getting', 'dinner'])
+puts
+
+def sum_elements(arr1, arr2)
+    new_arr = []
+    i = 0
+    while i < arr1.length
+        element1 = arr1[i]
+        element2 = arr2[i]
+        new_element = element1 + element2
+        new_arr << new_element
+        i += 1
+    end
+    return new_arr
+end
+print sum_elements([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
+
+def fizz_buzz(max)
+    nums = []
+    i = 0
+    while i < max
+        if (i % 4 == 0 || i % 6 == 0) && !(i % 4 == 0 && i % 6 == 0)
+            nums << i 
+        end
+        i += 1
+    end
+    return nums
+end
+print fizz_buzz(20)
