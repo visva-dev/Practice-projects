@@ -157,3 +157,70 @@ print format_name('joe tribiany')
 puts
 print format_name('chandler bing')
 puts
+
+def is_valid_name(str)
+    parts = str.split(' ')
+    if parts.length < 2
+        return false
+    end
+    parts.each do |part|
+        if !is_capitalized(part)
+            return false
+        end
+    end
+    return true
+end
+
+def is_capitalized(word)
+    if word[0] == word[0].upcase && word[1..-1] == word[1..-1].downcase
+        return true
+    else
+        return false
+    end
+end
+puts is_capitalized('Bootcamp')
+puts is_capitalized('linkedin')
+
+def is_valid_email(str)
+    parts = str.split('@')
+    if parts.length != 2
+        return false
+    end
+    left = parts[0]
+    right = parts[1]
+    alpha = 'abcdefghijklmnqrstuvwxyz'
+    left.each_char do |char|
+        if !alpha.include?(char)
+            return false
+        end
+    end
+    if right.split('.').length == 2
+        return true
+    else
+        return false
+    end
+end
+puts is_valid_email('abs@xy.z')
+puts is_valid_email('jdoe@gmail.com')
+puts is_valid_email('jdoe@gm@ail.com')
+
+def reverse_words(sent)
+    words = sent.split(' ')
+    new_words = []
+    words.each { |word| new_words << word.reverse }
+    new_sent = new_words.join(' ')
+    return new_sent
+end
+puts reverse_words('Keep cooding')
+puts reverse_words('Simple is cool')
+
+def rotate_array(arr, num)
+    num.times do
+        ele = arr.pop
+        arr.unshift(ele)
+    end
+    return arr
+end
+print rotate_array(['matt', 'danny'], 1)
+puts
+print rotate_array(['a', 'b'], 2)
