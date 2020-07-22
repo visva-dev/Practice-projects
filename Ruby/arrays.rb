@@ -237,6 +237,7 @@ def doubler(numbers)
 end
 print doubler([1, 2, 3, 4])
 print "\n"
+
 def yell(words)
     yelled = []
     i = 0
@@ -252,6 +253,7 @@ print yell(['hello', 'world'])
 print "\n"
 print yell(['code', 'is', 'cool'])
 print "\n"
+
 def element_times_index(nums)
     new_nums = []
     i = 0

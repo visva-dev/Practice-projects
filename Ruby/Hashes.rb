@@ -98,3 +98,36 @@ print sorted[-1]
 puts
 print sorted[-1][0]
 puts
+
+
+def get_double_age(hash)
+	return hash["age"] * 2
+end
+
+puts get_double_age({"name"=>"App Academy", "age"=>5}) # => 10
+puts get_double_age({"name"=>"Ruby", "age"=>23})       # => 46
+
+
+def get_full_name(hash)
+    return hash["first"] + " " + hash["last"] + ", the " + hash["title"]
+  
+  end
+  
+  hash1 = {"first"=>"Michael", "last"=>"Jordan", "title"=> "GOAT"}
+  puts get_full_name(hash1) # => "Michael Jordan, the GOAT"
+  
+  hash2 = {"first"=>"Fido", "last"=>"McDog", "title"=> "Loyal"}
+  puts get_full_name(hash2) # => "Fido McDog, the Loyal"
+
+
+  def word_lengths(sentence)
+    words = sentence.split(" ")
+    lengths = {}
+  
+    words.each { |word| lengths[word] = word.length}
+  
+    return lengths
+  end
+  
+  puts word_lengths("this is fun") #=> {"this"=>4, "is"=>2, "fun"=>3}
+  puts word_lengths("When in doubt, leave it out") #=> {"When"=>4, "in"=>2, "doubt,"=>6, "leave"=>5, "it"=>2, "out"=>3}
