@@ -26,10 +26,10 @@ puts is_div_by_5(105)
 def either_only(number)
     if (number % 3 == 0 || number % 5 == 0) && !(number % 3 == 0 && number % 5 == 0)
         return true
-        else
-            return false
-        end
+    else
+        return false
     end
+end
 
 puts either_only(9)
 puts either_only(20)
@@ -53,10 +53,20 @@ puts larger_number(99, 100)
 def longer_string(str1, str2)
     if str1.length > str2.length
         return str1
-    else
+    elsif str1.length < str2.length
         return str2
+    else
+        return "it's a tie"
     end
 end
+
+# def longer_string(str1, str2)
+#     if str1.length >= str2.length
+#         return str1
+#     else
+#         return str2
+#     end
+# end
 
 puts longer_string("hello", "world")
 puts longer_string("Microverse", "student")

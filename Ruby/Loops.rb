@@ -141,6 +141,14 @@ puts reverse("bootcamp")
 puts reverse("apple")
 puts reverse("pizza")
 
+# def reverse(word)
+# 	return word.reverse
+# end
+
+# puts reverse("cat")          # => "tac"
+# puts reverse("programming")  # => "gnimmargorp"
+# puts reverse("bootcamp")     # => "pmactoob"
+
 
 def is_palindrome(word)
     reversed = ""
@@ -159,3 +167,15 @@ end
 puts is_palindrome("racecar")
 puts is_palindrome("kayak")
 puts is_palindrome("bootcamp")
+
+# def is_palindrome(word)
+#     if word == word.reverse
+#       return true
+#     else
+#       false
+#     end
+#   end
+  
+#   puts is_palindrome("racecar")  # => true
+#   puts is_palindrome("kayak")    # => true
+#   puts is_palindrome("bootcamp") # => false
