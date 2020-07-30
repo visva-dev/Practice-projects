@@ -1,0 +1,252 @@
+/* Super Centered - place items: center */
+.parent {
+  display: grid;
+  place-items: center;
+  background: #6bc8e7;
+  height: 100vh;
+  resize: both;
+  overflow: auto;
+}
+
+.child {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid red;
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: system-ui, serif;
+}
+
+/* Deconstructed pancake */
+.parent2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+  /* If we don't want the items to stretch: */
+  flex: 0 1 300px;
+  /* //  If we do want the items to stretch; */
+  flex: 1 1 300px;
+
+  /* //   etc. */
+  border: 1px solid red;
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Sidebar Says */
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  height: 100vh;
+  /* //   etc. */
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content {
+  padding: 2rem;
+}
+
+/* Pancake Stack */
+
+.container2 {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  background: lightpink;
+  padding: 2rem;
+}
+
+.main {
+  background: coral;
+}
+
+footer {
+  background: wheat;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Classic Holy Grail Layout */
+
+.container3 {
+  display: grid;
+  height: 100vh;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.header2 {
+  background: rgb(189, 58, 78);
+  padding: 2rem;
+  grid-column: 1 / 4;
+}
+
+.left-sidebar {
+  background: lightblue;
+  grid-column: 1 / 2;
+}
+
+.main2 {
+  background: coral;
+  grid-column: 2 / 3;
+}
+
+.right-sidebar {
+  background: yellow;
+  grid-column: 3 / 4;
+}
+
+.footer2 {
+  background: rgb(146, 143, 137);
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
+
+/* 12-Span Grid */
+.container4 {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.div-c4 {
+  display: grid;
+  place-items: center;
+}
+
+.span-12 {
+  background: lightpink;
+  grid-column: 1 / 13;
+}
+
+.span-6 {
+  background: lightblue;
+  grid-column: 1 / 7;
+}
+
+.span-4 {
+  background: coral;
+  grid-column: 4 / 9;
+}
+
+.span-2 {
+  background: yellow;
+  grid-column: 3 / 5;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+/* RAM (Repeat, Auto, Minmax) */
+.container5 {
+  display: grid;
+  height: 100vh;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.div1 {
+  display: grid;
+  place-items: center;
+  background: lightpink;
+}
+
+/* Line Up */
+.container6 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.visual {
+  height: 100px;
+  width: 100%;
+  background: wheat;
+  margin: 0.5rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: lightpink;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.spacer {
+  width: 100%;
+  background: white;
+  height: 10px;
+}
+
+/* Clamping My Style */
+.container7 {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.visual2 {
+  height: 100px;
+  width: 100%;
+  background: wheat;
+  margin: 0.5rem 0;
+}
+
+.card2 {
+  width: clamp(23ch, 50vw, 46ch);
+  display: flex;
+  flex-direction: column;
+  background: lightpink;
+  padding: 1rem;
+}
+
+/* Respect for Aspect */
+.container7 {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .visual3 {
+    aspect-ratio: 16/9;
+    background: wheat;
+    margin: 0.5rem 0;
+  }
+  
+  .card3 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background: lightpink;
+    padding: 1rem;
+  }
