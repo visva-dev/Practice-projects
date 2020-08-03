@@ -1,1 +1,18 @@
-%h1 It's working!
+#banner
+	.banner_content
+		%h1 NotesApp
+		%p Organize your life.
+		%button= link_to "Enter", new_user_registration_path
+
+#callouts
+	.callout_inner
+		.wrapper
+			.callout
+				%h2 Organize
+				%p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat enim eos illum autem excepturi nobis, commodi veritatis quaerat repudiandae ut et labore voluptate, iusto velit est voluptatibus officiis. Alias!
+
+#bottom_cta
+	.wrapper
+		%h2 Go Ahead!
+		%br
+		%button= link_to "Join Now", new_user_registration_path
