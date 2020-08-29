@@ -1,27 +1,28 @@
-<h1>Articles listing page</h1>
+<div id="page-content">
+  <h1 class="text-center mt-3">Articles page</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3">Actions</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.title %></td>
-        <td><%= article.description %></td>
-        <td><%= link_to 'Read', article_path(article) %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: "Are you sure?" } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<p>
-  <%= link_to 'Create new article', new_article_path %>
-</p>
+  <div class="container">
+  <% @articles.each do |article| %>
+    <div class="row justify-content-md-center">
+      <div class="col-9 mt-4">
+        <div class="card text-center shadow-sm mb-5 bg-white rounded">
+          <div class="card-header font-italic">
+          by Visva
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to article.title, article_path(article), class: "text_success" %></h5>
+          <p class="card-text"><%= truncate(article.description, length: 100) %></p>
+          <a href="#" class="btn btn-outline-success">Read</a>
+          <a href="#" class="btn btn-outline-info">Edit</a>
+          <a href="#" class="btn btn-outline-danger">Delete</a>
+        </div>
+        <div class="card-footer text-muted">
+          <small>Created <%= time_ago_in_words(article.created_at) %> ago,
+          edited <%= time_ago_in_words(article.updated_at) %> ago </small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  </div>
+</div>
