@@ -1,25 +1,25 @@
 <h1 class="text-center mt-4">Listing all articles</h1>
-
+<div class="container">
   <% @articles.each do |article| %>
     <div class="row justify-content-md-center">
       <div class="col-9 mt-4">
         <div class="card text-center shadow-sm mb-5 bg-white rounded">
           <div class="card-header font-italic">
-          by Visva
-        </div>
-        <div class="card-body">
-          <h5 class="card-title"><%= link_to article.title, article_path(article), class: "text_success" %></h5>
-          <p class="card-text"><%= truncate(article.description, length: 100) %></p>
-          <a href="#" class="btn btn-outline-success">Read</a>
-          <a href="#" class="btn btn-outline-info">Edit</a>
-          <a href="#" class="btn btn-outline-danger">Delete</a>
-        </div>
-        <div class="card-footer text-muted">
-          <small>Created <%= time_ago_in_words(article.created_at) %> ago,
-          edited <%= time_ago_in_words(article.updated_at) %> ago </small>
+            by Visva
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= link_to article.title, article_path(article), class: "text_success" %></h5>
+            <p class="card-text"><%= truncate(article.description, length: 100) %></p>
+            <a href="#" class="btn btn-outline-success">Read</a>
+            <a href="#" class="btn btn-outline-info">Edit</a>
+            <a href="#" class="btn btn-outline-danger">Delete</a>
+          </div>
+          <div class="card-footer text-muted">
+            <small>Created <%= time_ago_in_words(article.created_at) %> ago,
+              edited <%= time_ago_in_words(article.updated_at) %> ago </small>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   <% end %>
 </div>
